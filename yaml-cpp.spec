@@ -1,13 +1,13 @@
 Summary:	YAML parser and emitter for C++
 Summary(pl.UTF-8):	Biblioteka C++ analizująca i generująca YAML
 Name:		yaml-cpp
-Version:	0.3.0
+Version:	0.5.0
 Release:	1
 License:	MIT
 Group:		Libraries
 #Source0Download: http://code.google.com/p/yaml-cpp/downloads/list
 Source0:	http://yaml-cpp.googlecode.com/files/%{name}-%{version}.tar.gz
-# Source0-md5:	9aa519205a543f9372bf4179071c8ac6
+# Source0-md5:	c6d96190434d5959d814c603f98512c6
 URL:		http://code.google.com/p/yaml-cpp/
 BuildRequires:	cmake >= 2.6
 BuildRequires:	libstdc++-devel
@@ -34,7 +34,7 @@ Header files for yaml-cpp library.
 Pliki nagłówkowe biblioteki yaml-cpp.
 
 %prep
-%setup -q -n %{name}
+%setup -q
 
 %build
 %cmake .
@@ -56,7 +56,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc license.txt
 %attr(755,root,root) %{_libdir}/libyaml-cpp.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libyaml-cpp.so.0.3
+%attr(755,root,root) %ghost %{_libdir}/libyaml-cpp.so.0.5
 
 %files devel
 %defattr(644,root,root,755)
