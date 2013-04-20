@@ -1,13 +1,13 @@
 Summary:	YAML parser and emitter for C++
 Summary(pl.UTF-8):	Biblioteka C++ analizująca i generująca YAML
 Name:		yaml-cpp
-Version:	0.5.0
+Version:	0.5.1
 Release:	1
 License:	MIT
 Group:		Libraries
 #Source0Download: http://code.google.com/p/yaml-cpp/downloads/list
 Source0:	http://yaml-cpp.googlecode.com/files/%{name}-%{version}.tar.gz
-# Source0-md5:	c6d96190434d5959d814c603f98512c6
+# Source0-md5:	0fa47a5ed8fedefab766592785c85ee7
 URL:		http://code.google.com/p/yaml-cpp/
 BuildRequires:	cmake >= 2.6
 BuildRequires:	libstdc++-devel
