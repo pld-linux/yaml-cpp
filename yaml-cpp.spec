@@ -1,3 +1,6 @@
+# Note: the only package that requires yaml-cpp is OpenColorIO, and it requires
+#	the old API (as in yaml-cpp 0.3.0), so please don't STBR the new API until
+#	OpenColorIO is updated.
 Summary:	YAML parser and emitter for C++
 Summary(pl.UTF-8):	Biblioteka C++ analizująca i generująca YAML
 Name:		yaml-cpp
