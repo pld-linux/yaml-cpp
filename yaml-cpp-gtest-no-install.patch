@@ -1,0 +1,26 @@
+--- yaml-cpp-yaml-cpp-0.6.2/test/gtest-1.8.0/googlemock/CMakeLists.txt.orig	2018-03-06 05:56:23.000000000 +0100
++++ yaml-cpp-yaml-cpp-0.6.2/test/gtest-1.8.0/googlemock/CMakeLists.txt	2018-06-25 18:05:05.861189115 +0200
+@@ -103,10 +103,6 @@
+ ########################################################################
+ #
+ # Install rules
+-install(TARGETS gmock gmock_main
+-  DESTINATION lib)
+-install(DIRECTORY ${gmock_SOURCE_DIR}/include/gmock
+-  DESTINATION include)
+ 
+ ########################################################################
+ #
+--- yaml-cpp-yaml-cpp-0.6.2/test/gtest-1.8.0/googletest/CMakeLists.txt.orig	2018-03-06 05:56:23.000000000 +0100
++++ yaml-cpp-yaml-cpp-0.6.2/test/gtest-1.8.0/googletest/CMakeLists.txt	2018-06-25 18:05:19.014522293 +0200
+@@ -102,10 +102,6 @@
+ ########################################################################
+ #
+ # Install rules
+-install(TARGETS gtest gtest_main
+-  DESTINATION lib)
+-install(DIRECTORY ${gtest_SOURCE_DIR}/include/gtest
+-  DESTINATION include)
+ 
+ ########################################################################
+ #
