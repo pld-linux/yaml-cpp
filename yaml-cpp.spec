@@ -11,7 +11,7 @@ Source0:	https://github.com/jbeder/yaml-cpp/archive/%{name}-%{version}.tar.gz
 Patch0:		%{name}-gtest-no-install.patch
 Patch1:		%{name}-cmake-config.patch
 URL:		https://github.com/jbeder/yaml-cpp/
-BuildRequires:	cmake >= 2.6
+BuildRequires:	cmake >= 3.4
 BuildRequires:	libstdc++-devel >= 6:4.7
 BuildRequires:	rpmbuild(macros) >= 1.605
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
