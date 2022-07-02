@@ -1,26 +1,10 @@
---- yaml-cpp-yaml-cpp-0.6.2/test/gtest-1.8.0/googlemock/CMakeLists.txt.orig	2018-03-06 05:56:23.000000000 +0100
-+++ yaml-cpp-yaml-cpp-0.6.2/test/gtest-1.8.0/googlemock/CMakeLists.txt	2018-06-25 18:05:05.861189115 +0200
-@@ -103,10 +103,6 @@
- ########################################################################
- #
- # Install rules
--install(TARGETS gmock gmock_main
--  DESTINATION lib)
--install(DIRECTORY ${gmock_SOURCE_DIR}/include/gmock
--  DESTINATION include)
+--- yaml-cpp-yaml-cpp-0.7.0/test/CMakeLists.txt.orig	2021-07-10 17:53:22.000000000 +0200
++++ yaml-cpp-yaml-cpp-0.7.0/test/CMakeLists.txt	2022-07-02 08:00:07.984458875 +0200
+@@ -2,6 +2,7 @@ find_package(Threads REQUIRED)
  
- ########################################################################
- #
---- yaml-cpp-yaml-cpp-0.6.2/test/gtest-1.8.0/googletest/CMakeLists.txt.orig	2018-03-06 05:56:23.000000000 +0100
-+++ yaml-cpp-yaml-cpp-0.6.2/test/gtest-1.8.0/googletest/CMakeLists.txt	2018-06-25 18:05:19.014522293 +0200
-@@ -102,10 +102,6 @@
- ########################################################################
- #
- # Install rules
--install(TARGETS gtest gtest_main
--  DESTINATION lib)
--install(DIRECTORY ${gtest_SOURCE_DIR}/include/gtest
--  DESTINATION include)
+ set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+ set(BUILD_MOCK ON CACHE BOOL "" FORCE)
++set(INSTALL_GTEST OFF CACHE BOOL "" FORCE)
+ set(CMAKE_POLICY_DEFAULT_CMP0048 NEW)
  
- ########################################################################
- #
+ add_subdirectory(
