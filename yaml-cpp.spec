@@ -1,15 +1,14 @@
 Summary:	YAML parser and emitter for C++
 Summary(pl.UTF-8):	Biblioteka C++ analizująca i generująca YAML
 Name:		yaml-cpp
-Version:	0.7.0
+Version:	0.8.0
 Release:	1
 License:	MIT
 Group:		Libraries
 #Source0Download: https://github.com/jbeder/yaml-cpp/releases
-Source0:	https://github.com/jbeder/yaml-cpp/archive/%{name}-%{version}.tar.gz
-# Source0-md5:	74d646a3cc1b5d519829441db96744f0
+Source0:	https://github.com/jbeder/yaml-cpp/archive/%{version}/%{name}-%{version}.tar.gz
+# Source0-md5:	1d2c7975edba60e995abe3c4af6480e5
 Patch0:		%{name}-gtest-no-install.patch
-Patch1:		%{name}-cmake-config.patch
 URL:		https://github.com/jbeder/yaml-cpp/
 BuildRequires:	cmake >= 3.4
 BuildRequires:	libstdc++-devel >= 6:4.7
@@ -36,9 +35,8 @@ Header files for yaml-cpp library.
 Pliki nagłówkowe biblioteki yaml-cpp.
 
 %prep
-%setup -q -n %{name}-%{name}-%{version}
+%setup -q
 %patch0 -p1
-%patch1 -p1
 
 %build
 install -d build
@@ -67,7 +65,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc LICENSE README.md
 %attr(755,root,root) %{_libdir}/libyaml-cpp.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libyaml-cpp.so.0.7
+%attr(755,root,root) %ghost %{_libdir}/libyaml-cpp.so.0.8
 
 %files devel
 %defattr(644,root,root,755)
